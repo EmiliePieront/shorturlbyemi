@@ -17,7 +17,7 @@
         $req = $bdd->prepare('INSERT INTO users(username) VALUES(?)');
         //Execute la requête
         $req->execute(array($prenom));
-        header('location: https://zutzutzut.herokuapp.com/');
+        header('location: https://shorturlbyemi.herokuapp.com/');
         exit();
     }
 
