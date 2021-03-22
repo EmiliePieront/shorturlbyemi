@@ -27,7 +27,7 @@ if (isset($_POST["url"])){
     $url = $_POST["url"];
     //Verif si pas un lien : 
     if(!filter_var($url, FILTER_VALIDATE_URL)){
-        header('location: ./?error=true&message=Wrong url');
+        header('location: ../?error=true&message=Wrong url');
         exit();
     }
     $shortcut = crypt($url, rand());
@@ -39,7 +39,7 @@ if (isset($_POST["url"])){
 
     while ($result = $req->fetch()){
         if($result['x'] != 0) {
-            header('location: ./?error=true&message=Adress already shortened');
+            header('location: ../?error=true&message=Adress already shortened');
             exit();
         }
     }
