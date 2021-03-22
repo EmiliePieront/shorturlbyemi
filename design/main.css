@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Pacifico&display=swap');
+html, body {
+    margin:0;
+    padding:0;
+    font-family: 'Quicksand', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+/* -------------------------- HEADER -----------------------------------------*/
+
+#hello {
+    background-image: url('../img/hello.jpg');
+    background-size: cover;
+    min-height: 500px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    padding:30px;
+}
+
+header #logo {
+    height: 50px;
+    margin: 10px;
+}
+
+.title {
+    color:white;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 2.9em;
+    font-weight: 700 !important;
+}
+
+.row {
+
+  margin:0;
+  padding:0;
+}
+
+.form {
+    justify-content: center;
+    margin-top: 30px;
+    gap:10px;
+}
+#result {
+   border: 2px solid white;
+   border-radius: 5px;
+   padding:20px;
+   color:rgb(255, 255, 255);
+   font-weight: 600;
+   margin-top: 50px;
+   box-shadow: 2px 2px 2px 0 black;
+   background-color: rgba(88, 88, 88, 0.63);
+}
+#result a {
+    color:white;
+}
+.center {
+    display: grid;
+    justify-content: center;
+}
+/*------------------------------------- BODY -------------------------------*/
+
+
+#pub {
+    background-color: #c3cbcf;
+    height: auto;
+}
+#pub .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.pubLogo {
+    height: 115px;
+    transition: all 0.5s ease-out;
+    filter: contrast(20%) grayscale(1);
+}
+
+.pubLogo:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease-out;
+    filter: contrast(100%);
+}
+#pub .title {
+    font-size: 2.6em;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    font-family: 'Pacifico', cursive;
+}
+#hello input, #hello button {
+    box-shadow: 1px 1px 1px 0 black;
+}
+
+
+/*------------------------------------- FOOTER -------------------------------*/
+
+
+.footer {
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    height: auto;
+}
+.footer img {
+    height: 50px;
+}
+
+/*------------------------------------- MEDIA QUERIES -------------------------------*/
+
+@media (max-width: 780px) {
+    .container {
+      width:100vw;
+      padding:20px;
+    }
+    .form {
+        margin-top: 20px;
+    }
+ 
+}
+@media (max-width: 700px) {
+
+    #pub {
+        height: auto;
+    }
+    #pub img {
+        margin-top: 20px;
+    }
+    #pub .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+}
