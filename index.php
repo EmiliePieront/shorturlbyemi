@@ -10,24 +10,5 @@
         <a href="http://mveuz.com" target="_blank"><img class="pubLogo"src="img/mvz1.png" alt="logo de Ma vie est un zapping"></a>
     </div>
 </section>
-<?php 
-    if(isset($_POST['user']) && isset($_POST['submit'])){
-        $prenom = $_POST['user'];
-        //Prepare la requête
-        $req = $bdd->prepare('INSERT INTO users(username) VALUES(?)');
-        //Execute la requête
-        $req->execute(array($prenom));
-        header('location: https://shorturlbyemi.herokuapp.com/');
-        exit();
-    }
-
-?>
-<h1>HELLOOOOO I'M LINDSAY LOHAAAAAAN</h1>
-<form method="post" action="index.php">
-    <input name='user' type='text' placeholder="Enter your username">
-    <label for="user">What's your name?</label><br/>
-    <button type="submit" name="submit">Envoyer</button>
-</form>
-
 
 <?php include "components/footer.php"?>
