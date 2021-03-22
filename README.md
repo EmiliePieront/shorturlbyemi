@@ -2,7 +2,8 @@
 
 ## My first url shortener 
 
-I follow some courses on Udemy, and here is the course about *PHP* and *MySQL* by Louis Nicolas Leuillet
+I follow some courses on Udemy, and here is the course about *PHP* and *MySQL* by Louis Nicolas Leuillet.
+
 In this course we made an url shortener.
 
 ## Technology 
