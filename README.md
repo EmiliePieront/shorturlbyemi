@@ -15,3 +15,8 @@ My database is a free base on [Remote MySQL](https://remotemysql.com/).
 You can try my app on [this link](https://shorturlbyemi.herokuapp.com/)
 Just a detail : each url must be unique. So you can't add twice the same link. 
 
+## Preview
+
+Here is a preview of my work : 
+
+![preview](img/cutyoururl.png)
