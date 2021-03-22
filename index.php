@@ -10,22 +10,24 @@
         <a href="http://mveuz.com" target="_blank"><img class="pubLogo"src="img/mvz1.png" alt="logo de Ma vie est un zapping"></a>
     </div>
 </section>
-
 <?php 
-    if(isset($_POST['user']{
+    if(isset($_POST['user']) && isset($_POST['submit'])){
         $prenom = $_POST['user'];
         //Prepare la requête
         $req = $bdd->prepare('INSERT INTO users(username) VALUES(?)');
         //Execute la requête
         $req->execute(array($prenom));
-        echo $prenom;
+        header('location: https://zutzutzut.herokuapp.com/');
+        exit();
     }
 
 ?>
-<form method="post" action="test.php">
+<h1>HELLOOOOO I'M LINDSAY LOHAAAAAAN</h1>
+<form method="post" action="index.php">
     <input name='user' type='text' placeholder="Enter your username">
-    <label for="user">What's your name?</label>
+    <label for="user">What's your name?</label><br/>
+    <button type="submit" name="submit">Envoyer</button>
 </form>
-<button type="submit">Envoyer</button>
+
 
 <?php include "components/footer.php"?>
