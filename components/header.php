@@ -94,7 +94,7 @@ if (isset($_POST["url"])){
                     <?php  } else if (isset($_GET["short"])) {?>
                         <div class="center"> 
                             <div id="result">
-                                <p>Your short Url : <a href="https://shorturlbyemi.herokuapp.com/?q=<?php echo htmlspecialchars($_GET["short"]);?>">https://shorturlbyemi.herokuapp.com/?q=<?php echo htmlspecialchars($_GET["short"]);?></a></p>
+                                <p>Your short Url : <a href="https://shorturlbyemi.herokuapp.com/index.php/?q=<?php echo htmlspecialchars($_GET["short"]);?>">https://shorturlbyemi.herokuapp.com/index.php/?q=<?php echo htmlspecialchars($_GET["short"]);?></a></p>
                             </div>
                         </div>
                    <?php } 
